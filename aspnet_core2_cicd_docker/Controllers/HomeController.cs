@@ -36,5 +36,10 @@ namespace aspnet_core2_cicd_docker.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult AWS()
+        {
+            return Json("Hello AWS!");
+        }
     }
 }
